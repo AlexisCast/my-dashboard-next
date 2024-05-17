@@ -20,7 +20,7 @@ export default async function PokekeomPage({ params }: Props) {
 	return (
 		<div>
 			<h1>Pokemon {params.id}</h1>
-			<div>{JSON.stringify(pokemon)}</div>
+			{/* <div>{JSON.stringify(pokemon)}</div> */}
 		</div>
 	);
 }
