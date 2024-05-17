@@ -1,4 +1,5 @@
 import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/app/pokemons";
+import { notFound } from "next/navigation";
 
 const getPokemons = async (
 	limit = 20,
@@ -12,6 +13,9 @@ const getPokemons = async (
 		id: String(pokemon.url.split("/").at(-2)),
 		name: pokemon.name,
 	}));
+
+	// throw new Error("This is an Error!");
+	// throw notFound();
 
 	return pokemons;
 };
